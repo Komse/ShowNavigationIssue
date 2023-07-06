@@ -8,10 +8,18 @@ struct ContentView: View {
                     .imageScale(.large)
                     .foregroundColor(.accentColor)
                 Text("Hello, world!")
+                goToYellowButton()
             }
             .padding()
         }
     }
+
+    private func goToYellowButton() -> some View {
+        NavigationLink(destination: YellowView()) {
+            Text("Go to Yellow")
+                .foregroundColor(.yellow)
+        }
+        .navigationTitle("Yellow")
     }
 }
 
