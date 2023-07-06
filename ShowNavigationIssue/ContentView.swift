@@ -25,7 +25,7 @@ struct ContentView: View {
 
     private func goToYellowButton() -> some View {
         NavigationLink(destination: YellowView()) {
-            Text("Go to Yellow")
+            Text("Go to Yellow - NavigationLink")
                 .foregroundColor(.yellow)
         }
         .navigationTitle("Yellow")
