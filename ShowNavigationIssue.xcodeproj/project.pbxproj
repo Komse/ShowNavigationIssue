@@ -11,6 +11,7 @@
 		840283232A56EFDD00353123 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840283222A56EFDD00353123 /* ContentView.swift */; };
 		840283252A56EFDE00353123 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840283242A56EFDE00353123 /* Assets.xcassets */; };
 		840283282A56EFDE00353123 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840283272A56EFDE00353123 /* Preview Assets.xcassets */; };
+		8402832F2A56F3BA00353123 /* YellowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8402832E2A56F3BA00353123 /* YellowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		840283222A56EFDD00353123 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		840283242A56EFDE00353123 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		840283272A56EFDE00353123 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8402832E2A56F3BA00353123 /* YellowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				840283202A56EFDD00353123 /* ShowNavigationIssueApp.swift */,
 				840283222A56EFDD00353123 /* ContentView.swift */,
+				8402832E2A56F3BA00353123 /* YellowView.swift */,
 				840283242A56EFDE00353123 /* Assets.xcassets */,
 				840283262A56EFDE00353123 /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				840283232A56EFDD00353123 /* ContentView.swift in Sources */,
+				8402832F2A56F3BA00353123 /* YellowView.swift in Sources */,
 				840283212A56EFDD00353123 /* ShowNavigationIssueApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
