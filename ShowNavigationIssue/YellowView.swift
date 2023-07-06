@@ -18,5 +18,6 @@ struct YellowView: View {
             .font(.system(size: 17))
         }
         .navigationBarBackButtonHidden(true)
+        .navigationTitle("Yellow")
     }
 }

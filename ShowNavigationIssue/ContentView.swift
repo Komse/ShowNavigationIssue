@@ -16,6 +16,7 @@ struct ContentView: View {
                 YellowView()
                     .statusBar(hidden: false)
             }
+            .navigationTitle("Home")
         }
     }
 
@@ -24,7 +25,6 @@ struct ContentView: View {
             Text("Go to Yellow - NavigationLink")
                 .foregroundColor(.yellow)
         }
-        .navigationTitle("Yellow")
     }
 
     private func goToYellowScreenCoverButton() -> some View {
