@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var showYellowViewScreenCover: Bool = false
+    
     var body: some View {
         NavigationStack {
             VStack {
@@ -9,8 +11,15 @@ struct ContentView: View {
                     .foregroundColor(.accentColor)
                 Text("Hello, world!")
                 goToYellowButton()
+                goToYellowScreenCoverButton()
             }
             .padding()
+            .fullScreenCover(isPresented: $showYellowViewScreenCover) {
+                print("showYellowViewScreenCover dismissed")
+            } content: {
+                YellowView()
+                    .statusBar(hidden: false)
+            }
         }
     }
 
@@ -20,6 +29,15 @@ struct ContentView: View {
                 .foregroundColor(.yellow)
         }
         .navigationTitle("Yellow")
+    }
+
+    private func goToYellowScreenCoverButton() -> some View {
+        Button {
+            showYellowViewScreenCover.toggle()
+        } label: {
+            Text("Go to Yellow - Screen Cover" )
+                .foregroundColor(.yellow)
+        }
     }
 }
 
