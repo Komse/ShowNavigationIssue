@@ -6,18 +6,29 @@ struct YellowView: View {
     var body: some View {
         ZStack {
             Color.yellow.edgesIgnoringSafeArea(.all)
-            Button(
-                action: { presentationMode.wrappedValue.dismiss() },
-                label: {
-                    HStack{
-                        Image(systemName: "chevron.backward")
-                        Text("Back")
+            VStack {
+                Button(
+                    action: { presentationMode.wrappedValue.dismiss() },
+                    label: {
+                        HStack{
+                            Image(systemName: "chevron.backward")
+                            Text("Back")
+                        }
                     }
-                }
-            )
-            .font(.system(size: 17))
+                )
+                .font(.system(size: 17))
+                
+                goToRedButton()
+            }
         }
         .navigationBarBackButtonHidden(true)
         .navigationTitle("Yellow")
+    }
+    
+    private func goToRedButton() -> some View {
+        NavigationLink(destination: RedView()) {
+            Text("Go to Red - NavigationLink")
+                .foregroundColor(.red)
+        }
     }
 }
