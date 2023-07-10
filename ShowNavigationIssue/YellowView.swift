@@ -1,14 +1,14 @@
 import SwiftUI
 
 struct YellowView: View {
-    @Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
+    @Environment(\.dismiss) private var dismiss: DismissAction
     
     var body: some View {
         ZStack {
             Color.yellow.edgesIgnoringSafeArea(.all)
             VStack {
                 Button(
-                    action: { presentationMode.wrappedValue.dismiss() },
+                    action: { dismiss() },
                     label: {
                         HStack{
                             Image(systemName: "chevron.backward")
